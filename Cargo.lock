@@ -749,16 +749,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "demo-meta-state-v1"
-version = "0.1.0"
-dependencies = [
- "gear-wasm-builder",
- "gmeta",
- "gstd",
- "kee_bee_io",
-]
-
-[[package]]
 name = "der"
 version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1650,7 +1640,6 @@ dependencies = [
 name = "gear_friend_contract"
 version = "0.1.1"
 dependencies = [
- "demo-meta-state-v1",
  "gear-wasm-builder",
  "gstd",
  "gtest",

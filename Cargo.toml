@@ -7,6 +7,8 @@ license = "MIT OR Apache-2.0"
 
 # [workspace]
 # members = ["state-v1","kee_bee_io"]
+[workspace]
+members = ["kee_bee_io"]
 
 [dependencies]
 kee_bee_io = { path = "kee_bee_io" }
@@ -16,7 +18,7 @@ gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"], ta
 [build-dependencies]
 gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", tag = "v1.0.1" }
 kee_bee_io = { path = "kee_bee_io" }
-demo-meta-state-v1 = { path = "state-v1", default-features = false, optional = true }
+# demo-meta-state-v1 = { path = "state-v1", default-features = false, optional = true }
 
 
 [dev-dependencies]
@@ -27,7 +29,3 @@ gtest = { git = "https://github.com/gear-tech/gear.git", tag = "v1.0.1" }
 
 [features]
 debug = ["gstd/debug"]
-default = ["nostd"]
-nostd = [
-    "demo-meta-state-v1/nostd",
-]
